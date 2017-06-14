@@ -5,7 +5,7 @@ reqs = install_reqs = parse_requirements('requirements.txt')
 
 setup(name='SeleniumAI',
       description='An openAI environment that uses Selenium to create web automation agents',
-      version='0.0.1',
+      version='0.0.2',
       url='https://github.com/bewestphal/SeleniumAI',
       author='Brian Westphal',
       author_email='coding@brianwestphal.com',
@@ -16,6 +16,7 @@ setup(name='SeleniumAI',
           'openai',
           'environment'
       ],
+      packages = ['lib'],
       classifiers=[
           'Development Status :: 3 - Alpha',
           'Intended Audience :: Developers',

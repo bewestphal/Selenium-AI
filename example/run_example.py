@@ -1,5 +1,5 @@
 from example.configuration import ExampleConfiguration
-from kickoff import kickoff
+from lib.kickoff import kickoff
 
 
 if __name__ == '__main__':

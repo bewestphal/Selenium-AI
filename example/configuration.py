@@ -1,15 +1,17 @@
-from environment import SeleniumEnvironment
-from processor import SeleniumObservationProcessor
+import os
+
 import keras.backend as K
+import numpy as np
 from keras.layers import Dense, Activation, Flatten, Convolution2D, Permute
 from keras.layers.convolutional import Conv2D
 from keras.models import Sequential
-import numpy as np
 from models import AbstractConfiguration, KickoffModes
 from rl.memory import SequentialMemory
 from rl.policy import LinearAnnealedPolicy, EpsGreedyQPolicy
+
+from lib.environment import SeleniumEnvironment
+from lib.processor import SeleniumObservationProcessor
 from srcdir import srcdir
-import os
 
 
 class ExampleConfiguration(AbstractConfiguration):
