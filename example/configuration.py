@@ -9,8 +9,8 @@ from models import AbstractConfiguration, KickoffModes
 from rl.memory import SequentialMemory
 from rl.policy import LinearAnnealedPolicy, EpsGreedyQPolicy
 
-from lib.environment import SeleniumEnvironment
-from lib.processor import SeleniumObservationProcessor
+from package.environment import SeleniumEnvironment
+from package.processor import SeleniumObservationProcessor
 from srcdir import srcdir
 
 
