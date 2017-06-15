@@ -2,9 +2,7 @@
 An openAI environment using selenium + docker for creating web automation agents
 
 # Installation
-```
-pip install seleniumai
-```
+Install the requirements.txt file with pip
 
 This package requires docker. You can install docker by following the instructions here: https://docs.docker.com/engine/installation/
 
