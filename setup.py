@@ -18,12 +18,12 @@ for item in requirements:
 
 setup(name='seleniumai',
       description='An openAI environment that uses Selenium to create web automation agents',
-      version='0.0.5',
+      version='0.0.6',
       url='https://github.com/bewestphal/SeleniumAI',
       author='Brian Westphal',
       author_email='coding@brianwestphal.com',
       license='MIT',
-      download_url='https://github.com/bewestphal/SeleniumAI',
+      download_url='https://codeload.github.com/bewestphal/SeleniumAI/0.0.6.tar.gz',
       keywords=[
           'selenium',
           'artificial intelligence',
