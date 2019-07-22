@@ -94,3 +94,5 @@ ENV/
 
 .idea/
 .pypirc
+example/dqn_selenium_ai_weights.h5f
+

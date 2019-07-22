@@ -30,7 +30,7 @@ class SeleniumEnvironment(VNCEnv):
         vnc_address = re.sub(str(container_port), str(container_vnc_port), container_url)
         vnc_address = re.sub('http', 'vnc', vnc_address)
 
-        print 'You can view the VNC instance at ' + vnc_address, 'Password "secret"'
+        print('You can view the VNC instance at ' + vnc_address, 'Password "secret"')
 
         self.vnc_env = VNCEnv()
         self.vnc_env._configure(remotes=str(vnc_address), vnc_kwargs={'password': 'secret'})

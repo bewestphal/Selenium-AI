@@ -1,18 +1,16 @@
 import os
 
-import keras.backend as K
 import numpy as np
+from package.environment import SeleniumEnvironment
+from package.processor import SeleniumObservationProcessor
+from srcdir import srcdir
+import keras.backend as K
 from keras.layers import Dense, Activation, Flatten, Convolution2D, Permute
 from keras.layers.convolutional import Conv2D
 from keras.models import Sequential
 from models import AbstractConfiguration, KickoffModes
 from rl.memory import SequentialMemory
 from rl.policy import LinearAnnealedPolicy, EpsGreedyQPolicy
-
-from package.environment import SeleniumEnvironment
-from package.processor import SeleniumObservationProcessor
-from srcdir import srcdir
-
 
 class ExampleConfiguration(AbstractConfiguration):
     mode = KickoffModes.train  # type: KickoffModes
@@ -103,6 +101,7 @@ class ExampleConfiguration(AbstractConfiguration):
     def on_environment_creation(self):
         # Create file within the docker container to use as the test web page
         filepath = srcdir + '/example/test.html'
+        print(filepath)
         self.environment.selenium_docker_wrapper.upload_file_to_container(filepath)
         self.starting_url = 'file://' + '/' + os.path.basename(filepath)
 
