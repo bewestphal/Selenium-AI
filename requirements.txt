@@ -1,3 +1,5 @@
+numpy
+go-vncdriver
 attrs==17.2.0
 autobahn==17.5.1
 Automat==0.6.0
@@ -10,7 +12,6 @@ docker-py==1.10.3
 docker-pycreds==0.2.1
 fastzbarlight==0.0.14
 funcsigs==1.0.2
-go-vncdriver==0.4.19
 gym==0.7.4
 h5py==2.7.0
 idna==2.5
@@ -19,7 +20,6 @@ ipaddress==1.0.18
 Keras==2.0.4
 keras-rl==0.3.0
 mock==2.0.0
-numpy==1.13.0rc2
 olefile==0.44
 pbr==3.0.1
 Pillow==4.1.1

@@ -1,2 +1,2 @@
 import os
-srcdir = os.path.dirname(__file__)
+srcdir = os.path.dirname(os.path.abspath(__file__))

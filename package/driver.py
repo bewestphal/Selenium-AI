@@ -65,15 +65,16 @@ class SeleniumDockerDriverWrapper(object):
             desired_capabilities=chrome_options.to_capabilities())
 
     def clean(self):
-        print 'Cleaning up Selenium driver and docker container'
+        print('Cleaning up Selenium driver and docker container')
 
         self.driver and self.driver.quit()
         self.container and self.docker_client.remove_container(self.container_id, force=True)
 
     def create_archive(self, filepath):
+        print(filepath)
         pw_tarstream = BytesIO()
         pw_tar = tarfile.TarFile(fileobj=pw_tarstream, mode='w')
-        file_data = open(filepath, 'r').read()
+        file_data = open(filepath, 'rb').read()
         tarinfo = tarfile.TarInfo(name=os.path.basename(filepath))
         tarinfo.size = len(file_data)
         tarinfo.mtime = time.time()
