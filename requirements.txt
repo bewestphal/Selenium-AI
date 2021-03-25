@@ -25,7 +25,7 @@ pbr==3.0.1
 Pillow==4.1.1
 protobuf==3.3.0
 pyglet==1.2.4
-PyYAML==3.12
+PyYAML==5.4
 requests==2.10.0
 scipy==0.19.0
 selenium==3.0.1
