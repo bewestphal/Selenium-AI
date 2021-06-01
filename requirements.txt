@@ -36,7 +36,7 @@ Twisted==17.1.0
 txaio==2.7.1
 ujson==1.35
 universe==0.21.3
-urllib3==1.21.1
+urllib3==1.26.5
 websocket-client==0.40.0
 Werkzeug==0.12.2
 zope.interface==4.4.1
