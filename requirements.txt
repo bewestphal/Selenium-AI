@@ -22,7 +22,7 @@ mock==2.0.0
 numpy==1.13.0rc2
 olefile==0.44
 pbr==3.0.1
-Pillow==4.1.1
+Pillow==8.2.0
 protobuf==3.3.0
 pyglet==1.2.4
 PyYAML==3.12
