@@ -19,7 +19,7 @@ ipaddress==1.0.18
 Keras==2.0.4
 keras-rl==0.3.0
 mock==2.0.0
-numpy==1.13.0rc2
+numpy==1.22.0rc1
 olefile==0.44
 pbr==3.0.1
 Pillow==4.1.1
