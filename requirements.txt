@@ -34,7 +34,7 @@ tensorflow==1.1.0
 Theano==0.9.0
 Twisted==17.1.0
 txaio==2.7.1
-ujson==1.35
+ujson==5.4.0
 universe==0.21.3
 urllib3==1.21.1
 websocket-client==0.40.0
